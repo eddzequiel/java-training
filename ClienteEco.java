@@ -20,6 +20,7 @@ public class ClienteEco {
                 // System.out.println("Introduzca texto: ");
                 String textToSend = inputReader.nextLine();
                 socketWriter.println(textToSend);
+                socketWriter.flush();
                 System.out.println(socketReader.nextLine());
             }
 
